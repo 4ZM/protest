@@ -1,4 +1,4 @@
-angular.module('protest.controllers', [])
+﻿angular.module('protest.controllers', [])
 
 .controller('ProtestsCtrl', function($scope, Protests) {
   $scope.protests = Protests.all();
