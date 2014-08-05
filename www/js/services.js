@@ -1,11 +1,6 @@
 ﻿angular.module('protest.services', [])
 
-/**
- * A simple example service that returns some data.
- */
 .factory('Protests', function() {
-  // Might use a resource here that returns a JSON array
-
   // Some fake testing data
   var protests = [
     { id: 0, foe: 'Sverigedemokraterna', location: 'Kungsörs torg', time: '2014-07-29 14:00', url: 'https://www.facebook.com/events/252610284935755/'},

@@ -1,6 +1,6 @@
 ﻿<ion-view title="Protester &amp; Aktioner">
   <ion-nav-buttons side="right">
-    <button class="button button-icon icon ion-loop" ng-click="refresh()"></button>
+    <button ng-class="refreshing ? 'ion-looping' : 'ion-loop'" class="button button-icon icon" ng-click="refresh()"></button>
   </ion-nav-buttons>
 
   <ion-content class="has-header">
