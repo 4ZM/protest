@@ -9,7 +9,7 @@
   {
     $scope.refreshing = true;
 
-    $http.get('https://www.4zm.org/inofficial/protests.json').
+    $http.get('/protests.json').
     success(function(data) {
       newProtests = [];
 
