@@ -20,6 +20,7 @@
         $ionicLoading.show({ template: 'Kunde inte uppdatera listan på protester. Fel på dataformatet.', noBackdrop: true, duration: 2000 });
 	  }
 
+	  Protests.wipe();
       for (i = 0; i < newProtests.length; ++i) {
       	Protests.addProtest(newProtests[i]);
       }

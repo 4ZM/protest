@@ -21,6 +21,10 @@
     save: function(protests) {
       window.localStorage['protests'] = angular.toJson(protests);
     },
+    wipe: function() {
+      protests = [];
+      delete window.localStorage['protests'];
+    },
     addProtest: function(newProtest) {
 
       // Update it if allready exists
