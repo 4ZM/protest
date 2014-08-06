@@ -1,6 +1,6 @@
 ﻿angular.module('protest.services', [])
 
-.factory('Protests', function() {
+.factory('Protests', function($http) {
   var protests = [];
 
   return {

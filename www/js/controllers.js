@@ -1,50 +1,41 @@
 ﻿angular.module('protest.controllers', [])
 
-.controller('ProtestsCtrl', function($scope, Protests) {
+.controller('ProtestsCtrl', function($scope, $http, $ionicLoading, Protests) {
   Protests.load();
   $scope.protests = Protests.all();
   $scope.refreshing = false;
 
   $scope.refresh = function()
   {
-    // Placeholder function - should initiate refresh
-    $scope.refreshing = ($scope.refreshing) ? false : true;
+    $scope.refreshing = true;
 
-    Protests.addProtest(
-      { 
-		id: 0, 
-      	foe: 'Sverigedemokraterna', 
-      	location: 'Kungsörs torg', 
-      	time: '2014-07-29 16:00', 
-      	icon: "img/sd.png", 
-      	url: 'https://www.facebook.com/events/252610284935755/'
-      });
-    Protests.addProtest(
-      { 
-		id: 1, 
-      	foe: 'Svenskarnas Parti', 
-      	location: 'Mynttorget', 
-      	time: '2014-07-19 14:00', 
-      	icon: "img/svp.png"
-      });
-    Protests.addProtest(
-      { 
-      	id: 2, 
-      	foe: 'Israels ockupation', 
-      	location: 'Slottet', 
-      	time: '2014-09-1 14:00'
-      });
-    Protests.addProtest(
-      { 
-      	id: 3, 
-      	foe: 'Sverigedemokraterna', 
-      	location: 'Götaplatsen', 
-      	time: '2014-07-29 16:00', 
-      	icon: "img/sd.png"
-      });
+    $http.get('https://www.4zm.org/inofficial/protests.json').
+    success(function(data) {
+      newProtests = [];
+
+      try {
+        newProtests = angular.fromJson(data);
+	  }
+	  catch(err) {
+        $ionicLoading.show({ template: 'Kunde inte uppdatera listan på protester. Fel på dataformatet.', noBackdrop: true, duration: 2000 });
+	  }
+
+      for (i = 0; i < newProtests.length; ++i) {
+      	Protests.addProtest(newProtests[i]);
+      }
+      
+      $scope.protests = Protests.all();
+      $ionicLoading.show({ template: 'Listan av protester har uppdaterats', noBackdrop: true, duration: 2000 });	
+      Protests.save($scope.protests);
+    }).
+    error(function(data, status) {
+    	$ionicLoading.show({ template: 'Kunde inte uppdatera listan på protester', noBackdrop: true, duration: 2000 });
+    }).
+    finally(function() {
+      $scope.refreshing = false;
+    });
 
   	$scope.protests = Protests.all();
-	Protests.save($scope.protests);
   }
 })
 
