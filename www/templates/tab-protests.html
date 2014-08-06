@@ -4,7 +4,14 @@
   </ion-nav-buttons>
 
   <ion-content class="has-header">
-    <div class="list">
+    <div ng-hide="protests.length" class="card">
+      <div class="item item-text-wrap">
+        Just nu finns ingen information om några protester eller aktioner.
+      </div>
+    </div>
+
+
+    <div ng-show="protests.length" class="list">
       <a ng-repeat="protest in protests" class="item item-thumbnail-left" href="#/tab/protest/{{protest.id}}">
         <img ng-show="protest.icon" src="{{protest.icon}}">
         <h2>{{protest.foe}}</h2>
