@@ -40,8 +40,8 @@
 })
 
 .controller('ProtestDetailCtrl', function($scope, $stateParams, Protests) {
+  Protests.load();  
   $scope.protest = Protests.get($stateParams.protestId);
-  console.log($scope.protest);
 })
 
 .controller('AboutCtrl', function($scope) {

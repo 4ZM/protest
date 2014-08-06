@@ -1,12 +1,28 @@
 ﻿<ion-view title="{{protest.foe}}">
-  <ion-content has-header="true" padding="true">
-  <b>Foe:</b> {{protest.foe}}
-  <br />
-  <b>Location:</b> {{protest.location}}
-  <br />
-  <b>Time:</b> {{protest.time}}
-  <br />
-  <b>URL:</b> <a href="{{protest.url}}">{{protest.url}}</a>
-  
+  <ion-content has-header="true">
+  <div class="list card">
+  	<div class="item item-icon-right">
+      <h2>{{protest.foe}}</h2>
+      <p>{{protest.time}}</p>
+      <p>{{protest.location}}</p>
+      <p ng-if="protest.map"><a class="calm" href="{{protest.map}}">
+      	<i class="icon ion-map" style="font-size: 50px; margin-right: 12px;"></i>
+      </a></p>
+    </div>
+
+    <div class="item item-text-wrap">
+    	<p ng-if="protest.desc">
+	    {{protest.desc}}
+	    </p>
+	    <p ng-if="!protest.desc">
+	    Det finns ingen ytterligare information just nu...
+	    </p>
+    </div>
+
+    <div ng-if="protest.url" class="item item-icon-left">
+      <i class="icon ion-link"></i>   
+      <p><a class="subdued" href="{{protest.url}}">{{protest.url}}</a></p>
+  	</div>
+  </div>
   </ion-content>
 </ion-view>
