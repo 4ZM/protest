@@ -4,10 +4,13 @@
   </ion-nav-buttons>
 
   <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="protest in protests" type="item-text-wrap" href="#/tab/protest/{{protest.id}}">
-        {{protest.foe}}
-      </ion-item>
-    </ion-list>
+    <div class="list">
+      <a ng-repeat="protest in protests" class="item item-thumbnail-left" href="#/tab/protest/{{protest.id}}">
+        <img ng-show="protest.icon" src="{{protest.icon}}">
+        <h2>{{protest.foe}}</h2>
+        <p>{{protest.time}}</p>
+        <p>{{protest.location}}</p>
+      </a>
+    </div>
   </ion-content>
 </ion-view>
