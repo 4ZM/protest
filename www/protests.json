@@ -1,30 +1,97 @@
 [{ 
     "id": 0, 
-    "foe": "Sverigedemokraterna", 
-    "location": "Kungsörs torg", 
-    "map": "https://goo.gl/maps/oHv8V",
-    "time": "2014-07-29 16:00", 
+    "foe": "Sverigedemokraterna (SD)", 
+    "location": "Halmstad, Stationsparken", 
+    "map": "https://goo.gl/maps/wKNfE",
+    "time": "2014-08-11 09:00-10:00", 
     "icon": "img/sd.png", 
-    "url": "https://www.facebook.com/events/252610284935755/",
-    "desc": "Dags att föra lite oväsen! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "desc": "Sverigedemokraternas valturne. Dags att föra lite oväsen!"
   },
   { 
-		"id": 1, 
-    "foe": "Svenskarnas Parti", 
-   	"location": "Mynttorget", 
-   	"time": "2014-07-19 14:00", 
-    "icon": "img/svp.png"
+    "id": 1, 
+    "foe": "Sverigedemokraterna (SD)", 
+    "location": "Borås, Stora Torget", 
+    "map": "https://goo.gl/maps/wKNfE",
+    "time": "2014-08-12 10:00-11:00", 
+    "icon": "img/sd.png", 
+    "desc": "Sverigedemokraternas valturne. Dags att föra lite oväsen!"
+  },  
+  { 
+    "id": 4, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Ystad, Österportstorg", 
+    "map": "https://goo.gl/maps/596Ma",
+    "time": "2014-08-23 10:00-11:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  },
+    { 
+    "id": 5, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Malmö, Limhamnstorget", 
+    "time": "2014-08-23 14:00-15:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
   },
   { 
-   	"id": 2, 
-    "foe": "Israels ockupation", 
-    "location": "Slottet", 
-    "time": "2014-09-1 14:00"
+    "id": 6, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Helsingborg, Sundstorget", 
+    "map": "https://goo.gl/maps/DX9lT",
+    "time": "2014-08-23 18:00-19:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
   },
   { 
-    "id": 3, 
-    "foe": "Sverigedemokraterna", 
-    "location": "Götaplatsen", 
-    "time": "2014-07-29 16:00", 
-    "icon": "img/sd.png"
-  }]
+    "id": 7, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Halmstad, Stora torg", 
+    "time": "2014-08-24 10:00-11:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  },
+    { 
+    "id": 8, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Göteborg, Götaplatsen", 
+    "map": "https://goo.gl/maps/D67tB",
+    "time": "2014-08-24 14:00-15:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  },
+  { 
+    "id": 9, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Vänersborg, Torget", 
+    "map": "https://goo.gl/maps/KDWm8",
+    "time": "2014-08-24 18:00-19:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  },
+  { 
+    "id": 10, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Åmål, Mellanbrogatan", 
+    "time": "2014-08-25 10:00-11:00", 
+    "map": "https://goo.gl/maps/wHBH7",
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  },
+    { 
+    "id": 11, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Karlstad, Stora torget", 
+    "map": "https://goo.gl/maps/4wdNo",
+    "time": "2014-08-25 14:00-15:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  },
+  { 
+    "id": 12, 
+    "foe": "Svenskarnas Parti (SvP)", 
+    "location": "Karlskoga, Alfred Nobels torg", 
+    "time": "2014-08-25 18:00-19:00", 
+    "icon": "img/svp.png", 
+    "desc": "Svenskarnas Partis valturné. Låt oss bjuda motstånd i varenda stad!"
+  }
+  ]
