@@ -13,7 +13,8 @@
 
     <div ng-show="protests.length" class="list">
       <a ng-repeat="protest in protests" class="item item-thumbnail-left" href="#/tab/protest/{{protest.id}}">
-        <img ng-show="protest.icon" src="{{protest.icon}}">
+        <img ng-if="!protest.icon" src="img/default.png">
+        <img ng-if="protest.icon" src="{{protest.icon}}">
         <h2>{{protest.foe}}</h2>
         <p>{{protest.time}}</p>
         <p>{{protest.location}}</p>
